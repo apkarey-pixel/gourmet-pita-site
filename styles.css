@@ -1,0 +1,48 @@
+:root{
+ --bg:#ebeae3;
+ --ink:#241f1a;
+ --muted:#6a6259;
+ --card:#f7f6f1;
+ --olive:#2f3a2c;
+ --line:rgba(0,0,0,.08);
+}
+
+body{
+ margin:0;
+ font-family:system-ui;
+ background:var(--bg);
+ color:var(--ink);
+}
+
+.container{max-width:1100px;margin:auto;padding:28px 18px}
+
+.hero{background:linear-gradient(#f6f5ef,var(--bg));border-bottom:1px solid var(--line)}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+
+.brand{display:flex;align-items:center;gap:14px}
+.logo{height:52px}
+
+.brand-name{font-weight:900;font-size:18px}
+.brand-tag{font-size:13px;color:var(--muted)}
+
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:center}
+
+.hero-img{width:100%;border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.18)}
+
+h1{font-size:38px}
+
+.subhead{color:var(--muted)}
+
+.btn{padding:12px 20px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-weight:800}
+.primary{background:var(--olive);color:#fff}
+
+.cta-row{margin:18px 0;display:flex;gap:12px;flex-wrap:wrap}
+
+.section{border-bottom:1px solid var(--line)}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+.card{background:var(--card);padding:18px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+
+.footer{padding:30px;text-align:center;color:var(--muted)}
